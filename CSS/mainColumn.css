@@ -1,0 +1,79 @@
+ :root{
+    --primary-color: #476A6F;
+    --secondary-color: #519E8A;
+    --tertiary-color: #7EB09B;
+    --tertiary-alternate-color: #C5C9A4;
+    --contrast-color: #ECBEB4;
+    
+}
+ 
+ <!--this is the for the content within the main column space-->
+                .grid2{
+                display:grid;
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                width: 100%;
+                height:36%;
+                gap: 10px;
+                overflow: hidden;
+                }
+                    .updates{
+                    grid-row: 1;
+                    grid-column: 1;
+                    width:100%;
+                    height:100%;
+                    overflow:hidden;
+                    font-size: 20px;
+                    letter-spacing: 3px;
+                    border-top: var(--primary-color) 2px solid;
+                    }
+                    .aff{
+                    grid-row: 1;
+                    grid-column: 2;
+                    width:100%;
+                    height:100%;
+                    overflow:hidden;
+                    font-size: 20px;
+                    letter-spacing: 3px;
+                    border-top: var(--primary-color) 2px solid;
+                    }
+                    .about{
+                    grid-row:2;
+                    grid-column-start:1;
+                    grid-column-end:3;
+                    border-top: var(--primary-color) 2px solid;
+                    }
+                .post{
+                width:100%;
+                height:55%;
+                overflow:auto;
+                border-top: var(--primary-color) 5px solid;
+                }
+                .post a{
+                color:var(--contrast-color);
+                }
+                @media only screen and (max-width: 500px) {
+                .grid2{
+                height:40%;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr;
+                }
+                    .updates{
+                    grid-row:1;
+                    grid-column:1;
+                    }
+                    .aff{
+                    grid-row: 2;
+                    grid-column: 1;
+                    }
+                    .about{
+                    grid-row:3;
+                    grid-column: 1;
+                    }
+                    .websitetitle{
+                    font-size:25px;
+                    }
+                .post{
+                height:50%;
+                }
+                }
