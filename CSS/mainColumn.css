@@ -26,6 +26,7 @@
                     font-size: 20px;
                     letter-spacing: 3px;
                     border-top: var(--primary-color) 2px solid;
+                    height: max-content !important;
                     }
                     .aff{
                     grid-row: 1;
@@ -42,6 +43,7 @@
                     grid-column-start:1;
                     grid-column-end:3;
                     border-top: var(--primary-color) 2px solid;
+                    height: max-content !important;
                     }
                 .post{
                 width:100%;
