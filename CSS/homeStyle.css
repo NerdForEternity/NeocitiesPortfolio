@@ -32,6 +32,7 @@ body{
         background-color: var(--primary-color);
         background-image: url(../Images/background.png);
         background-repeat: repeat;
+        height: max-content !important
     }
 a{
         color:var(--contrast-color);
@@ -116,11 +117,12 @@ a{
             grid-row: 3;
             grid-column: 2;
             width: 100%;
-            height:100%;
+            height:max-content !important;
             background-color: var(--tertiary-color);
             padding: 20px;
             box-sizing: border-box;
             box-shadow: 3px 6px 10px #0000003a;
+
             }
         @media only screen and (max-width: 700px){
         .grid{
