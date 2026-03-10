@@ -120,6 +120,7 @@ a{
             background-color: var(--tertiary-color);
             padding: 20px;
             box-sizing: border-box;
+            box-shadow: 3px 6px 10px #0000003a;
             }
         @media only screen and (max-width: 700px){
         .grid{
@@ -133,6 +134,7 @@ a{
             .sidebar{
             grid-row: 3;
             grid-column: 1;
+            text-shadow: 3px 6px 10px #0000003a;
             }
             .header{
             grid-row:2;
@@ -143,6 +145,7 @@ a{
             grid-row-start:1;
             grid-row-end:5;
             grid-column: 2;
+            text-shadow: 3px 6px 10px #0000003a;;
             }
             .main{
             grid-row:4;
