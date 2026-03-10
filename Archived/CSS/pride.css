@@ -1,0 +1,471 @@
+    /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/games/gam-12/gam1113.cur), auto !important;} /* End https://www.cursors-4u.com */
+
+    
+    /* SAFE TO EDIT - CSS VARIABLES */
+    :root {
+        --title-font-size: 6vw;
+        background-color: var(--muted);
+        background-image: url("../Images/shley-tree-1.png");
+        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */;
+        --side-image: url('/Images/PFP.png');
+        --box-bg: #f5ecdfe5;
+        --background: #f5e2df;
+    }
+
+    /* THEME SETTINGS */
+    :root,
+    :root.red {
+        --main: #d92f38;
+        --muted: #d92f38b0;
+    }
+
+    :root.hotpink {
+        --main: #cf3480;
+        --muted: #cf347fbd;
+    }
+
+    :root.orange {
+        --main: #f8601a;
+        --muted: #f76e2ec5;
+    }
+
+    :root.yellow {
+        --main: #dfa505;
+        --muted: #e9da68d7;
+    }
+
+    :root.green {
+        --main: #439d81;
+        --muted: #439d81c0;
+    }
+
+    :root.turquoise {
+        --main: #0e8ea5;
+        --muted: #0fa8c3c5;
+    }
+
+    :root.indigo {
+        --main: #0269a4;
+        --muted: #0269a4ce;
+    }
+
+    :root.violet {
+        --main: #533664;
+        --muted: #3e254db9;
+    }
+
+    /* THEME SWITCHER */
+    #flag {
+        display: flex;
+        flex-direction: column;
+        width: 12vw;
+        margin: 0.5em auto;
+    }
+
+    .theme-button {
+        height: 1.2em;
+        border: none;
+    }
+
+    #hotpink {
+        background-color: #cf3480;
+    }
+
+    #red {
+        background-color: #d92f38;
+    }
+
+    #orange {
+        background-color: #f76d2e;
+    }
+
+    #yellow {
+        background-color: #e9d968;
+    }
+
+    #green {
+        background-color: #439d81;
+    }
+
+    #turquoise {
+        background-color: #0fa9c3;
+    }
+
+    #indigo {
+        background-color: #0269a4;
+    }
+
+    #violet {
+        background-color: #3e254d;
+    }
+
+    @font-face {
+        font-family: Pretty Kelly;
+        src: url(/CSS/Daydream.ttf);
+    }
+
+    @font-face {
+        font-family: National Park;
+        src: url(/CSS/Pixellari.ttf);
+    }
+
+    /* BASE STYLING */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        line-height: 1.15;
+        text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+        background: var(--bg-image) top repeat;
+        font-family: National Park;
+        color: var(--main);
+        font-size: 1.1em;
+        letter-spacing: 0.01em;
+        scrollbar-color: var(--main) var(--background);
+        /* Mozilla scrollbar fallback */
+    }
+
+    blockquote {
+        border-left: 1px solid var(--main);
+        padding-left: 0.5em;
+        margin-left: 1em;
+        font-style: italic;
+    }
+
+    button {
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+    }
+
+    button:hover,
+    button.active {
+        filter: brightness(140%);
+    }
+
+    mark {
+        background-color: var(--main);
+        color: var(--background);
+        padding: 0 5px;
+        border-radius: 2px;
+    }
+
+    figcaption {
+        font-style: italic;
+        font-size: smaller;
+    }
+
+    a {
+        color: var(--main);
+    }
+
+    a:hover {
+        filter: brightness(130%);
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    hr {
+        border: 1px solid var(--muted);
+    }
+
+    code {
+        background-color: var(--main);
+        color: var(--background);
+        padding: 0 3px;
+        border-radius: 3px;
+    }
+
+    .img-fluid {
+        max-width: 25rem;
+        height: auto;
+    }
+
+    p {
+        margin: 5px 0 10px 5px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0.2em;
+        font-family: Pretty Kelly;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+
+    ::selection {
+        background-color: var(--muted);
+        color: var(--background)
+    }
+
+    audio,
+    audio::-webkit-media-controls-panel {
+        max-width: 12vw;
+        background-color: var(--main);
+        filter: brightness(120%);
+        border-radius: 30px;
+    }
+
+    /* SCROLLBAR */
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+        position: fixed;
+        right: 12px;
+        z-index: 1;
+    }
+
+    ::-webkit-scrollbar-track {
+        box-shadow: 0;
+        border-radius: 0px;
+        background-color: var(--background);
+    }
+
+    .post ::-webkit-scrollbar-track {
+        border-left: 0px solid var(--main);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--muted);
+        border-radius: 0px;
+    }
+
+    /* WRAPPERS */
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+        margin: 0 auto 5vh auto;
+        width: 70vw;
+        padding: 15px;
+        gap: 2em;
+    }
+
+    .side-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 15em;
+        gap: 2em;
+    }
+
+    /* BOXES & SIDEBAR */
+    .side-wrapper>div,
+    .main {
+        background-color: var(--box-bg);
+        border: 2px solid var(--main);
+        box-shadow: 0.5em 0.5em var(--muted);
+        padding: 1em;
+        border-radius: 5px;
+    }
+
+    .main {
+        flex-grow: 1;
+    }
+
+    .side p {
+        text-align: center;
+        margin: 0.5em;
+    }
+
+    #side-img {
+        height: 11em;
+        max-width: 100%;
+        background: var(--side-image) center / contain no-repeat;
+        margin: 0.5em auto;
+    }
+
+    /* NAVLINKS */
+    #navlinks {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: flex-start;
+    }
+
+    #navlinks a {
+        background-color: var(--main);
+        color: var(--background);
+        padding: 8px;
+        margin: 5px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+
+    /* PAGE TITLE */
+    ul#title {
+        padding-left: 0;
+        margin: 0 auto;
+        width: 65vw;
+        font-size: var(--title-font-size);
+        flex-wrap: wrap;
+        display: flex;
+        flex: auto 1 1;
+        justify-content: center;
+        font-family: National Park;
+        -webkit-text-stroke: 1px var(--main);
+    }
+
+    #title li {
+        display: inline-flex;
+        margin: 0.15em;
+        background-size: 200vw auto;
+        background-image: repeating-linear-gradient(to right, #cf3480, #d92f38, #f76d2e, #e9d968, #439d81, #0fa9c3, #3e254d);
+        -webkit-animation: rainbow 10s linear reverse infinite;
+        animation: rainbow 10s linear reverse infinite;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
+    @keyframes rainbow {
+        0% {
+            background-position: 0% 50%
+        }
+
+        50% {
+            background-position: 100% 50%
+        }
+
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    /* BADGES */
+    #badge-img {
+        display: grid;
+        margin: auto auto;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        grid-column-gap: 6px;
+        grid-row-gap: 6px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    /* MOBILE STYLING */
+    @media only screen and (max-width: 768px) {
+        .wrapper {
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+        }
+
+        audio,
+        audio::-webkit-media-controls-panel {
+            max-width: 100%;
+        }
+
+        #flag {
+            width: 50vw;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+        }
+
+        .side-wrapper,
+        .main {
+            width: 80vw;
+            margin: 0 auto;
+        }
+
+        ul#title {
+            width: 100vw;
+            font-size: calc(var(--title-font-size) * 1.6);
+            margin: 3vh auto;
+        }
+    }
+
+/* music player container START */
+/* please note, depending on your line spacing and font-size, you may need to adjust things slightly, but this will get the player styled in a basic way */
+/* you're free to adjust anything!! if you do something really cool with it, please let me know!! i would love to see */
+
+.freako {
+    border: none; /* player container border */
+    width: 95%;/* player container size, change it to whatever works for you but i don't recommend it being too short */
+    height: 30px; /* player container height, i like 30px, personally */
+    background-color: transparent; /* player container backround colour */
+    color: var(--main); /* player container text colour */
+    margin: auto; /* player container margin, this centers it, if you don't want it centered, then feel free to remove this or play around with it */
+}
+        
+.freakoinner {
+    border: none; /* player container text area, i recommend no border */
+    width: 80%;/* player container text area width, make sure it's not as wide as the main container so the playbutton can work */
+    height: 80%; /* player container text area height, should be the same as the main container */
+    background-color: transparent; /* player container text area background, you can play with this if you wish */
+    color: var(--main); /* player container text colour */
+    float: left; /* makes the text float left */
+    overflow: hidden;
+        }
+        
+.freakobutton {
+    float: right; /* makes the play button float right */
+    margin-right: 7px; /* additional margin */
+}
+        
+.ico {
+    color: var(--main); /* play/pause button colour */
+    transition: 0.3s; /* controls the button animation upon hover */
+}
+        
+.ico:hover {
+    color: var(--muted); /* play/pause button hover colour */
+    transition: 0.3s; /* controls the button animation upon hover */
+}
+
+.marquee {
+   display: flex;
+   flex-flow: row nowrap;
+   white-space: nowrap;
+   justify-content: flex-end;
+}
+
+.marqueecont {
+   animation: marquee 4s 0s linear normal infinite; /* control the speed of your marquee here if needed */
+   position: relative;
+   display: inline-block;
+   padding-left: 200px; /* mess around with this if your song titles aren't scrolling properly :) */
+}
+
+@keyframes marquee {
+   0% {
+      right: -1rem;
+      transform: translate(100%, 0%);
+   }
+   100% {
+      right: calc(100% + 1rem);
+      transform: translate(0%, 0%);
+   }
+}
+        
+/* music player container FINISH */
+ 
