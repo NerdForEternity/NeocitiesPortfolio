@@ -11,13 +11,20 @@
 
 @font-face {
             font-family: header;
-            src: url(../Fonts/Bytesized/Bytesized-Regular.ttf);
+            src: url(../Fonts/NegativeSpace/NegativeSpace.ttf);
             }
 
 @font-face {
     font-family: body;
     src: url(../Fonts/Pixelify_Sans/static/PixelifySans-Regular.ttf);
 }
+
+@font-face {
+    font-family: postTitle;
+    src: url(../Fonts/Pixelify_Sans/static/PixelifySans-Regular.ttf);
+}
+
+
 body{
         color: var(--primary-color);
         font-family: body;
@@ -103,7 +110,7 @@ a{
             writing-mode: vertical-rl;
             text-orientation: mixed;
             font-size: 100px;
-            letter-spacing: 4px;
+            letter-spacing: 2px;
             }
             .main{
             grid-row: 3;

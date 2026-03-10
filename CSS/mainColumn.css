@@ -52,6 +52,12 @@
                 .post a{
                 color:var(--contrast-color);
                 }
+                .posttitle{
+                font-family: 'postTitle';
+                font-size: 28px;
+                letter-spacing: 3px;
+                color: var(--primary-color);
+                }
                 @media only screen and (max-width: 500px) {
                 .grid2{
                 height:40%;
