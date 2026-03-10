@@ -1,0 +1,271 @@
+<!--RAINBOW PAGE THEME by nenrikido.neocities.org-->
+<!--NOTES
+    1. This theme assumes you're already comfortable with HTML and CSS. CTRL F 'SAFE TO EDIT' to quickly jump to places for you to customize.
+    2. I've left notes throughout the CSS in case anyone wants to heavy edit. Hopefully it's fairly readable.
+    3. If you use this page theme for a full website (not just one page), be sure to separate the Javascript and CSS and then link them.
+    4. HAPPY PRIDE!!!!
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--SAFE TO EDIT - TITLE & SHORTCUT ICON-->
+  <link rel='shortcut icon' type='image/x-icon' href='https://files.catbox.moe/kjsd0k.gif' />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NerdForEternity's Corner</title>
+  <link rel="stylesheet" type="text/css" href="CSS/pride.css">
+</head>
+
+<body>
+
+  <!-- Web Amp-->
+  <div id="app"></div>
+  <script src="https://unpkg.com/webamp"></script>
+  <script src="/JS/webAmp.js"></script>
+
+  <!--SAFE TO EDIT - to make a space just leave empty <li> tags. title wraps when it gets too long -->
+  <ul id="title">
+    <li>G</li>
+    <li>A</li>
+    <li>L</li>
+    <li>L</li>
+    <li>E</li>
+    <li>R</li>
+    <li>Y</li>
+  </ul>
+
+  <div class="wrapper">
+    <div class="main">
+      <!--SAFE TO EDIT
+                Note: theme only supports one main class. if you'd like to add more "main" boxes you can add a main-wrapper class that uses flex columns (like the side-wrapper) -->
+      <!--Credit to w3schools for this gallery-->
+      <style>
+        div.gallery {
+          border: 2px solid var(--main);
+        }
+
+        div.gallery:hover {
+          border: 2px solid var(--muted);
+        }
+
+        div.gallery img {
+          width: 100%;
+          height: fit-content;
+        }
+
+        div.desc {
+          padding: 10px;
+          text-align: center;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+
+        .responsive {
+          padding: 0 6px;
+          float: left;
+          width: 32.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+          .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+          }
+        }
+
+        @media only screen and (max-width: 500px) {
+          .responsive {
+            width: 100%;
+          }
+        }
+
+        .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+      </style>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://files.catbox.moe/zzgitx.png">
+            <img src="https://files.catbox.moe/zzgitx.png" alt="Cinque Terre">
+          </a>
+          <div class="desc">yellow</div>
+        </div>
+      </div>
+
+
+      <div class="clearfix"></div>
+
+      <br>
+      <hr>
+      <h1>2024</h1>
+      <br>
+      <h2>Trip to Wales</h2>
+      <br>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Images\Gallery\WalesTrip2024\TripPhotos-2-2.jpg">
+            <img src="Images\Gallery\WalesTrip2024\TripPhotos-2-2.jpg" alt="Cinque Terre">
+          </a>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Images\Gallery\WalesTrip2024\TripPhotos-2.jpg">
+            <img src="Images\Gallery\WalesTrip2024\TripPhotos-2.jpg" alt="Cinque Terre">
+          </a>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Images\Gallery\WalesTrip2024\TripPhotos-3-2.jpg">
+            <img src="Images\Gallery\WalesTrip2024\TripPhotos-3-2.jpg" alt="Cinque Terre">
+          </a>
+          <div class="desc">test</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Images\Gallery\WalesTrip2024\TripPhotos-5.jpg">
+            <img src="Images\Gallery\WalesTrip2024\TripPhotos-5.jpg" alt="Cinque Terre">
+          </a>
+          <div class="desc">test</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Images\Gallery\WalesTrip2024\TripPhotos-6.jpg">
+            <img src="Images\Gallery\WalesTrip2024\TripPhotos-6.jpg" alt="Cinque Terre">
+          </a>
+          <div class="desc">test</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Images\Gallery\WalesTrip2024\TripPhotos-8.jpg">
+            <img src="Images\Gallery\WalesTrip2024\TripPhotos-8.jpg" alt="Cinque Terre">
+          </a>
+          <div class="desc">test</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Images\Gallery\WalesTrip2024\TripPhotos-10.jpg">
+            <img src="Images\Gallery\WalesTrip2024\TripPhotos-10.jpg" alt="Cinque Terre">
+          </a>
+          <div class="desc">test</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Images\Gallery\WalesTrip2024\TripPhotos-14.jpg">
+            <img src="Images\Gallery\WalesTrip2024\TripPhotos-14.jpg" alt="Cinque Terre">
+          </a>
+          <div class="desc">test</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Images\Gallery\WalesTrip2024\TripPhotos-18.jpg">
+            <img src="Images\Gallery\WalesTrip2024\TripPhotos-18.jpg" alt="Cinque Terre">
+          </a>
+          <div class="desc">test</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Images\Gallery\WalesTrip2024\TripPhotos-20.jpg">
+            <img src="Images\Gallery\WalesTrip2024\TripPhotos-20.jpg" alt="Cinque Terre">
+          </a>
+          <div class="desc">test</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Images\Gallery\WalesTrip2024\TripPhotos-22.jpg">
+            <img src="Images\Gallery\WalesTrip2024\TripPhotos-22.jpg" alt="Cinque Terre">
+          </a>
+          <div class="desc">test</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Images\Gallery\WalesTrip2024\TripPhotos-24.jpg">
+            <img src="Images\Gallery\WalesTrip2024\TripPhotos-24.jpg" alt="Cinque Terre">
+          </a>
+          <div class="desc">test</div>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+    </div>
+    <div class="side-wrapper">
+      <div class="side">
+        <h1>Bio</h1>
+        <div id="side-img">
+        </div>
+        <p>NerdForEternity (she/they)</p>
+        <hr>
+        <p>My Button!!</p>
+        <a target="_blank" href="https://nerdforeternity.neocities.org"><img src="https://files.catbox.moe/ho9azz.png"
+            style="display:block;margin-left:auto;margin-right:auto;"></a>
+        <br>
+        <textarea cols=30
+          style="display:block;margin-left:auto;margin-right:auto;"><a target="_blank" href="https://nerdforeternity.neocities.org"><img src="https://files.catbox.moe/ho9azz.png"></a></textarea>
+      </div>
+      <div>
+        <h1>Navigation</h1>
+        <div id="navlinks"> <a href="index.html">home</a> <a href="TinkerTime.html">projects</a>
+          <a href="Links.html">links [wip]</a> <a href="Gallery.html">gallery [wip]</a>
+          <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-37394-5c">guestbook</a>
+        </div>
+        <script>NekoType = "peach"</script>
+        <h1 id=nl>
+          <script src="https://webneko.net/n20171213.js"></script>
+          <a href="https://webneko.net">Neko</a>
+        </h1>
+      </div>
+      <div id="theme">
+        <h1>Theme</h1>
+        <p>Click a flag stripe.</p>
+        <div id="flag"> <button id="hotpink" title="hot pink (sex)" class="theme-button"
+            onclick="handleThemeButtonClick('hotpink', this)"></button> <button id="red" title="red (life)"
+            class="theme-button" onclick="handleThemeButtonClick('red', this)"></button> <button id="orange"
+            title="orange (healing)" class="theme-button" onclick="handleThemeButtonClick('orange', this)"></button>
+          <button id="yellow" title="yellow (sunlight)" class="theme-button"
+            onclick="handleThemeButtonClick('yellow', this)"></button> <button id="green" title="green (nature)"
+            class="theme-button" onclick="handleThemeButtonClick('green', this)"></button> <button id="turquoise"
+            title="turquoise (magic/art)" class="theme-button"
+            onclick="handleThemeButtonClick('turquoise', this)"></button> <button id="indigo" title="indigo (serenity)"
+            class="theme-button" onclick="handleThemeButtonClick('indigo', this)"></button> <button id="violet"
+            title="violet (spirit)" class="theme-button" onclick="handleThemeButtonClick('violet', this)"></button>
+        </div>
+      </div>
+      <div id="webrings">
+        <h1>Webrings!</h1>
+        <script src="https://transring.neocities.org/ring.js"></script>
+
+      </div>
+    </div>
+  </div>
+  <script src="/JS/prideTheme.js"></script>
+</body>
+
+</html>
